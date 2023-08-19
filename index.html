@@ -18,7 +18,7 @@
 <body>
 <main>
   <section id="top">
-    <img src="images/logo.svg" alt="">
+    <img src="images/logo.svg" alt="logo fylo" id="logo">
     <div>
       <div class="icon" id="document"><img src="images/icon-document.svg" alt="document icon"></div>
 
@@ -28,15 +28,26 @@
 
     </div>
   </section>
-    <secion id="bottom">
-      <p>You’ve used 815 GB of your storage</p>
-      <section id="number">
-        185 GB Left
-      </section>  
-      <p>0 GB</p>
+    <section id="bottom">
+      <div id="text" class="text">
+        <p>You’ve used 815 GB of your storage</p>
+      </div>
+      <div id="number">
+        <p ><span id="gb">185</span>  GBLeft</p>
+      </div>  
+      <div id="barr">
+        <div id="int">
+          <div id="bol"></div>
+        </div>
+      </div>
+      <div id="zero" class="text">
+        <p >0 GB</p>
+      </div>
       
-      <p>1000 GB</p>
-    </secion>
+      <div id="hund" class="text">
+        <p >1000 GB</p>
+      </div>
+    </section>
 </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
