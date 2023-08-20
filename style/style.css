@@ -10,8 +10,8 @@
   }
   main {
     display: grid;
-    grid-template-columns: auto 360px auto;
-    grid-template-rows: 1fr 3fr 120px 1fr;
+    grid-template-columns: auto 350px auto;
+    grid-template-rows: 1fr 2fr 160px 1fr;
     grid-template-areas: 
     ". . ."
     ". top ."
@@ -45,27 +45,29 @@
   main > section#top > div > div.icon{
     border-radius: 10px;
     display: inline-flex;
-    margin-left: 20px;
-    margin-top: 20px;
+   ;
+    margin-top: 40px;
     background-color: hsl(229, 57%, 11%);
 
   }
   main > section#top > div > div#document {
-    padding: 10px 13px;
+    padding: 12px 15px;
 
   }
   main > section#top > div > div#folder{
-    padding: 12px 10px;
+    padding: 14px 12px;
+    margin-left: 20px
   }
   main > section#top > div > div#upload {
-    padding: 14px 11px;
+    padding: 16px 13px;
+    margin-left: 20px
   }
 
   main > section#bottom {
     grid-area: bottom;
     display: grid;
     grid-template-columns: 1fr 1fr 80px;
-    grid-template-rows: 20px 15px 40px  50px;
+    grid-template-rows: 30px 15px 40px  50px;
 
 
     grid-template-areas: 
@@ -77,6 +79,9 @@
     
     border-radius: 10px;
   }
+  #zero, #hund {
+    align-self: center;
+  }
 
  main > section#bottom > div#number {
     grid-area: number;
@@ -84,25 +89,49 @@
     background-color: white;
     text-align: center;
     justify-self: center;
-    width: 170px;
-    height: 50px;
+    width:200px;
+    height: 80px;
     border-radius: 10px;
  }
  main > section#bottom > div#number > p {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2.5fr .2fr 2fr .2fr;
+    grid-template-rows: 30px 25px 25px  ;
+    grid-template-areas: 
+    "right right left ."
+    "right right left ."
+    "right right left ."
+    ;
+
+    letter-spacing: 2px;
     justify-content: center;
     align-items: center;
  }
  main > section#bottom > div#number > p > span#left {
-    margin-top: 10px;
+  font-size: .8em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 10px;
+  color: hsl(229, 7%, 55%);
+  grid-area: left;
+  margin-top: 10px;
+ text-align: left;
  }
  main > section#bottom > div#number > p > span#gb{
-  font-size: 2.5em;
+  
+  grid-area: right;
+  font-size: 3em;
   font-weight: bolder;
   color: hsl(229, 57%, 11%);
 }
  main > section#bottom > div#text {
+  text-align: center;
+  
+    color:hsl(243, 100%, 93%) ;
     grid-area: text;
+ }
+ span#of {
+  color: white;
  }
  div#barr {
     
