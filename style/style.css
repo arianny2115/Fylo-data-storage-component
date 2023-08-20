@@ -10,8 +10,8 @@
   }
   main {
     display: grid;
-    grid-template-columns: auto 300px auto;
-    grid-template-rows: 1fr .3fr 120px 1fr;
+    grid-template-columns: auto 360px auto;
+    grid-template-rows: 1fr 3fr 120px 1fr;
     grid-template-areas: 
     ". . ."
     ". top ."
@@ -67,23 +67,40 @@
     grid-template-columns: 1fr 1fr 80px;
     grid-template-rows: 20px 15px 40px  50px;
 
+
     grid-template-areas: 
     "text text text"
     "bar bar bar"
     "zero . hund"
-    ". number ."
+    "number number number"
     ;
-     
+    
+    border-radius: 10px;
   }
 
  main > section#bottom > div#number {
     grid-area: number;
+    
     background-color: white;
     text-align: center;
+    justify-self: center;
     width: 170px;
     height: 50px;
-    /* padding: 20px; */
+    border-radius: 10px;
  }
+ main > section#bottom > div#number > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ main > section#bottom > div#number > p > span#left {
+    margin-top: 10px;
+ }
+ main > section#bottom > div#number > p > span#gb{
+  font-size: 2.5em;
+  font-weight: bolder;
+  color: hsl(229, 57%, 11%);
+}
  main > section#bottom > div#text {
     grid-area: text;
  }
@@ -120,9 +137,5 @@
  main > section#bottom > div#hund {
     grid-area: hund;
  }
- span#gb{
-    font-size: 2em;
-    font-weight: bolder;
-    color: hsl(229, 57%, 11%);
- }
+
 
