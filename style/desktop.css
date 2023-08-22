@@ -7,16 +7,25 @@ div#wrapper {
     
     display: grid;
     grid-template-columns: 350px 650px ;
-    grid-template-rows: 1fr;
+    grid-template-rows: 190px;
+}
+section#top{
+    height: 130px;
+    align-self: flex-end;
+}
+section#under {
+    align-self: flex-end;
+    height: 90px;
 }
 p#gb{
 
     margin-left: 480px;
   }
 div#number {
+    border-radius: 10px 10px 0px 10px;
     top: 50%;
     left: 50%;
-    transform: translate(180%, -100px);
+    transform: translate(180%, -105px);
 }
 div#number::after {
     content: "";
@@ -28,4 +37,15 @@ div#number::after {
     right: 0px;
     top: 70px;
 }
+section#under > p {
+    margin-top: 10px;
+    text-align: left;
+}
+section#top > div#img {
+    margin-top: 30px;
+}
+section#top > img#logo{
+    height: 45px;
+}
+
 
