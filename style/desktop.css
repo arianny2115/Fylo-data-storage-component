@@ -1,0 +1,31 @@
+main {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+div#wrapper {
+    
+    display: grid;
+    grid-template-columns: 350px 650px ;
+    grid-template-rows: 1fr;
+}
+p#gb{
+
+    margin-left: 480px;
+  }
+div#number {
+    top: 50%;
+    left: 50%;
+    transform: translate(180%, -100px);
+}
+div#number::after {
+    content: "";
+    position: absolute;
+    border-right: 10px solid white;
+    border-left: 10px solid transparent;
+    border-top: 10px solid white;
+    border-bottom: 10px solid transparent;
+    right: 0px;
+    top: 70px;
+}
+

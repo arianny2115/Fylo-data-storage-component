@@ -27,7 +27,6 @@ div#wrapper {
     gap: 20px;
 }
 section {
-    width: 300px;
     
     background-color: hsl(228, 56%, 26%);
     padding: 30px;
@@ -126,6 +125,7 @@ div#number  {
     left: 50px;
     
 }
+
 
 
 
